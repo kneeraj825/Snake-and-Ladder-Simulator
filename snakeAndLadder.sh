@@ -4,6 +4,7 @@ echo Welcome To Snake and Ladder Game
 #Constant
 POSITION=0
 WINNING=100
+PREVPOSITION=0
 #repeating till winning position
 while (( $POSITION != $WINNING ))
 do
@@ -21,6 +22,11 @@ do
 		;;
 		$Ladder)
 			POSITION=$(($POSITION+$diceCheck))
+#checking if position goes beyond to winning position 
+			if (($POSITION>WINNING))
+			then
+				POSITION=$PREVPOSITION
+			fi
 			echo "current position: $POSITION"
 		;;
 		$Snake)
