@@ -5,6 +5,7 @@ echo Welcome To Snake and Ladder Game
 POSITION=0
 WINNING=100
 PREVPOSITION=0
+COUNT=0
 #repeating till winning position
 while (( $POSITION != $WINNING ))
 do
@@ -38,4 +39,7 @@ do
 			echo "current position after snake bitting: $POSITION"
 		;;
 	esac
+#counting the total dice roll
+COUNT=$(($COUNT+1))
+echo "Total number of times dice rolled: $COUNT"
 done
