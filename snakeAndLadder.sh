@@ -17,7 +17,7 @@ case $optionCheck in
 		echo "NO_PLAY:$POSITION"
 	;;
 	$Ladder)
-	POSITION=$(($POSITION+$diceCheck))
+		POSITION=$(($POSITION+$diceCheck))
 		echo "current position: $POSITION"
 	;;
 	$Snake)
