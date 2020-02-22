@@ -40,6 +40,6 @@ do
 		;;
 	esac
 #counting the total dice roll
-COUNT=$(($COUNT+1))
-echo "Total number of times dice rolled: $COUNT"
+	COUNT=$(($COUNT+1))
+	echo "Total number of times dice rolled: $COUNT"
 done
